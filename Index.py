@@ -1,4 +1,4 @@
-# importar as biblioteca das paradas
+# importar as biblioteca
 from ast import Pass
 from tkinter import *
 from tkinter import messagebox
@@ -26,7 +26,7 @@ logo = PhotoImage(file="icons/logo.png")
 LeftFrame = Frame(jan, width=200, height=300, bg="MIDNIGHTBLUE", relief="raise")
 LeftFrame.pack(side=LEFT)
 
-#agora doutro lado mona, nos podemos criar um separador
+#agora doutro lado, nos podemos criar um separador
 RightFrame = Frame(jan, width=395, height=300, bg="MIDNIGHTBLUE", relief="raise")
 RightFrame.pack(side=RIGHT)
 
@@ -34,7 +34,7 @@ RightFrame.pack(side=RIGHT)
 LogoLabel = Label(LeftFrame, image=logo, bg="MIDNIGHTBLUE",)
 LogoLabel.place(x=50, y=100)
 
-#agora o trem da direita
+#agora o lado da direita
 UserLabel = Label(RightFrame, text="Username:", font=("Century Gothic", 20), bg="MIDNIGHTBLUE", fg="White")
 UserLabel.place(x=5, y=100)
 
@@ -46,7 +46,6 @@ UserEntry.place(x=150, y=110)
 PassLabel = Label(RightFrame, text="Password", font=("Century Gothic", 20), bg="MIDNIGHTBLUE", fg="White")
 PassLabel.place(x=5, y=150)
 
-#o detalhe show="*" impede o usuario de ver oq se digita mas retorna o valor real
 PassEntry = ttk.Entry(RightFrame, width=30, show="*")
 PassEntry.place(x=150, y=160)
 
